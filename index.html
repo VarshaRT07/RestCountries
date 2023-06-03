@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST-COUNTRIES API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark" >
+    <nav>
+        <div class="header">
+            <h1>Where in the world?</h1>
+            <div class="darkmode">
+                Dark Mode
+            </div>
+        </div>
+    </nav>
+    <div class=" return hidden">
+        <button id="back">Back</button>
+        <div class="header">
+            <div class="country1">
+            </div>
+        </div>
+    </div>
+    <div class="header main hidden">
+        <form class="">
+            <i class="uil uil-search"></i>
+            <input type="text" class="countries search" name="indicountry" placeholder="Search for a country..">
+        </form>
+        <div>
+            <select name="filter" class="countries" id="filter" placeholder="Filter by Region">
+                <option value="region">Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+    </div>
+    <div class="listcountries hidden">
+      
+
+    </div>
+    <div class="specific hidden">
+
+       
+    </div>
+    
+        
+        
+        <script src="app.js"></script>
+</body>
+</html>

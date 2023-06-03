@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+*{
+    margin: 0;
+    border:none;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+body[data-theme="dark"] {
+    --color-dark-blue: hsl(209, 23%, 22%);
+    --color-very-dark-blue: hsl(207, 26%, 17%);
+    --color--very-l-dark-blue: hsl(200, 15%, 8%);
+    --color-dark-gray: hsl(0, 0%, 52%);
+    --color-very-light-gray: hsl(0, 0%, 98%);
+    --color-white: hsl(0, 0%, 100%);
+    background-color: var(--color-very-dark-blue);
+   
+    color:hsl(0, 0%, 100%)
+}
+
+body[data-theme="light"] {
+    --color-dark-blue: hsl(0, 0%, 100%);
+    --color-very-dark-blue: hsl(0, 0%, 95%);
+   
+    background-color: var(--color-very-dark-blue);
+   
+    color: black;
+}
+
+nav{
+    background-color: var(--color-dark-blue);
+    height: 80px;
+   
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 70px;
+}
+.countries{
+    padding: 10px;
+    background: var(--color-dark-blue);
+    color: rgb(123, 121, 121);
+    border: none;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    width: 220px;
+    outline: none;
+}
+input.active{
+    outline: none;
+}
+.listcountries{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2 rem;
+}
+.country img{
+    
+    height: 150px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.country{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--color-dark-blue);
+    border-radius: 8px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+    
+}
+.country-info {
+    padding: 20px;
+}
+.specific{
+    display: grid;
+    grid-template-rows: max-content;
+}
+.specific-country{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+    
+}
+.name{
+    margin-left: 30px;
+    font-size: 20px;
+    
+
+}
+.hidden{
+    display: none;
+}
+.flags{
+    width:100%;
+    height: 500px;
+}
+.info-country{
+    width:60%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.leftie{
+  margin: 20px 0px;
+  line-height: 30px;
+}
+.right{
+    margin: 60px;
+    line-height: 30px;
+    margin-right: 35vh ;
+}
+span{
+    margin-left:8px;
+
+}
+
+#back {
+    margin: 2rem;
+    padding: 5px 16px;
+    background-color: var(--color-dark-blue);
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+}
